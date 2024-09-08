@@ -51,6 +51,9 @@ a {
 
 img {
     display: block;
+}
+
+img {
     max-width: 100%;
     height: auto;
 }
@@ -58,11 +61,11 @@ img {
 button {
     font-family: inherit;
     color: currentColor;
-    cursor: pointer;
-    min-width: 169px;
+    /* cursor: pointer;
+    /* min-width: 169px;
     height: 56px;
-    border-radius: 4px;
-}
+    border-radius: 4px; */
+} */
 
 .visually-hidden {
     position: absolute;
@@ -80,20 +83,21 @@ button {
 .container {
     width: 1158px;
     margin: 0 auto;
+    padding: 0 15px
 }
 
-.section {
-    padding: 60px;
-}
-
-/* .wrapper {
-    padding: 60px;
+/* .section {
+    padding: 60px 0;
 } */
 
 
 /* #endregion */
 
 /* #region header*/
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .header-container {
     display: flex;
@@ -118,7 +122,8 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: flex;
-    padding: 24px 76px 24px 0;
+    padding: 0 24px;
+    margin-right: 76px
 }
 
 .header-logo-dark {
@@ -212,8 +217,8 @@ button {
     color: var(--color-white-background);
     max-width: 496px;
     margin: 0 auto;
-    padding: 128px 0 48px;
-
+    padding: 188px 0 48px;
+    max-width: 496px;
 }
 
 .hero-btn {
@@ -226,7 +231,11 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     display: block;
-    margin: 0 auto 128px;
+    margin: 0 auto 68px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .hero-btn:hover {
@@ -245,6 +254,15 @@ button {
     display: flex;
     padding-bottom: 15px;
     gap: 24px;
+
+}
+
+.info-list-item {
+    width: calc((100% - 72px) / 4)
+}
+
+.info-container {
+    padding: 120px 15px;
 }
 
 .info-text-secondary {
@@ -253,7 +271,8 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-primary-dark);
-    display: flex;
+    margin-bottom: 8px
+    
 }
 
 .info-text-tertiary {
@@ -269,6 +288,7 @@ button {
 /* #region team */
 .team {
     background-color: var(--color-light);
+    padding: 120px 0;
 }
 
 .team-list {}
@@ -291,7 +311,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-primary-dark);
-    padding: 32px 0 8px;
+    padding-bottom:8px;
 }
 
 .team-text-tertiary {
@@ -301,28 +321,39 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-text-primary);
-    padding-bottom: 32px;
 }
 
 .team-card-set {
     display: flex;
     flex-wrap: wrap;
     padding: 0 15px;
+    gap: 24px;
 }
 
 .team-card-set-item {
     width: calc((100% - 72px) / 4);
-    margin-right: 24px;
     background-color: var(--color-white-background);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-set-item:last-child {
     margin-right: 0;
 }
 
+.member-title {
+    padding: 32px 0;
+    text-align: center;
+}
+
 /* #endregion */
 
 /* #region portfolio */
+.portfolio-container {
+    padding: 120px 0 120px 0;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .portfolio-text-primary {
     font-weight: 700;
     font-size: 36px;
@@ -338,12 +369,12 @@ button {
     display: flex;
     flex-wrap: wrap;
     padding: 0 15px;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio-card-set-item {
     width: calc((100% - 48px) / 3);
-    margin-right: 24px;
-
 }
 
 .portfolio-card-set-item:nth-child(3n) {
@@ -356,7 +387,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-primary-dark);
-    padding: 32px 0 8px;
+    margin-bottom: 8px
 }
 
 .portfolio-text-tertiary {
@@ -365,7 +396,10 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-text-primary);
-    padding-bottom: 32px;
+}
+
+.app-titel {
+    padding: 32px 16px;
 }
 
 /* #endregion */
@@ -380,7 +414,7 @@ button {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 0 15px;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -392,6 +426,8 @@ button {
     text-transform: uppercase;
     color: var(--color-primary-brand);
     padding: 101px 0 18px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-light {
@@ -407,6 +443,7 @@ button {
     color: var(--color-light);
     max-width: 264px;
     padding-bottom: 100px;
+    max-width: 264px;
 
 }
 
