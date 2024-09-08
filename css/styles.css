@@ -74,9 +74,10 @@ button {
     margin: -1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
     overflow: hidden;
 }
 
@@ -204,6 +205,11 @@ button {
     background-color: var(--color-primary-dark);
 }
 
+.hero-container {
+    padding: 188px 0;
+}
+
+
 /* .hero-container {
     min-height: 600px;
 } */
@@ -250,6 +256,7 @@ button {
 
 /* #region info */
 
+
 .info-list {
     display: flex;
     padding-bottom: 15px;
@@ -262,7 +269,7 @@ button {
 }
 
 .info-container {
-    padding: 120px 15px;
+    padding: 120px 0px;
 }
 
 .info-text-secondary {
@@ -291,8 +298,6 @@ button {
     padding: 120px 0;
 }
 
-.team-list {}
-
 .team-text-primary {
     font-weight: 700;
     font-size: 36px;
@@ -301,7 +306,7 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: var(--color-primary-dark);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team-text-secondary {
@@ -311,7 +316,7 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-primary-dark);
-    padding-bottom:8px;
+    margin-bottom: 8px
 }
 
 .team-text-tertiary {
@@ -349,9 +354,11 @@ button {
 
 /* #region portfolio */
 .portfolio-container {
-    padding: 120px 0 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     border: 1px solid #e7e9fc;
     border-top: none;
+    border: 1px solid #e7e9fc;
 }
 
 .portfolio-text-primary {
@@ -362,7 +369,7 @@ button {
     text-align: center;
     text-transform: capitalize;
     color: var(--color-primary-dark);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-card-set {
@@ -407,6 +414,7 @@ button {
 /* #region footer */
 .footer {
     background-color: var(--color-primary-dark);
+    padding: 100px 0;
 }
 
 .footer-container {
@@ -414,7 +422,11 @@ button {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 100px 0;
+    
+}
+
+.portfolio-img {
+display: inline-block;
 }
 
 .footer-logo {
@@ -426,7 +438,7 @@ button {
     text-transform: uppercase;
     color: var(--color-primary-brand);
     padding: 101px 0 18px;
-    display: inline-block;
+    
     margin-bottom: 16px;
 }
 
