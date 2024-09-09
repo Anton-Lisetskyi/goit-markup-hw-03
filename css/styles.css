@@ -286,6 +286,20 @@ button {
     color: var(--color-text-primary);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* #endregion */
 
 /* #region team */
@@ -293,6 +307,8 @@ button {
     background-color: var(--color-light);
     padding: 120px 0;
 }
+
+
 
 .team-text-primary {
     font-weight: 700;
@@ -411,6 +427,11 @@ button {
 /* #endregion */
 
 /* #region footer */
+
+.footer a {
+    display: inline-block;
+}
+
 .footer {
     background-color: var(--color-primary-dark);
     padding: 100px 0;
@@ -422,11 +443,6 @@ button {
     justify-content: start;
     align-items: start;
     
-}
-
-.footer-logo,
-.footer-logo-light {
-    display: inline-block;
 }
 
 .footer-logo {
