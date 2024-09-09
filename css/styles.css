@@ -47,7 +47,6 @@ ol {
 a {
     text-decoration: none;
     color: currentColor;
-    display: inline-block;
 }
 
 img {
@@ -432,11 +431,14 @@ button {
 
 /* #region footer */
 
-
+.footer a {
+    display: inline-block;
+}
 
 .footer {
     background-color: var(--color-primary-dark);
     padding: 100px 0;
+    
 }
 
 .footer-container {
