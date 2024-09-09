@@ -219,7 +219,7 @@ button {
     color: var(--color-white-background);
     max-width: 496px;
     margin: 0 auto;
-    padding: 188px 0 48px;
+    padding: 0 0 48px;
     max-width: 496px;
 }
 
@@ -233,7 +233,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     display: block;
-    margin: 0 auto 68px;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     border: none;
@@ -303,7 +303,7 @@ button {
 /* #endregion */
 
 /* #region team */
-.team {
+.team-container {
     background-color: var(--color-light);
     padding: 120px 0;
 }
@@ -428,7 +428,7 @@ button {
 
 /* #region footer */
 
-.footer a {
+.footer-container a {
     display: inline-block;
 }
 
@@ -453,7 +453,6 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-primary-brand);
-    padding: 101px 0 18px;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -471,9 +470,7 @@ button {
     letter-spacing: 0.02em;
     color: var(--color-light);
     max-width: 264px;
-    padding-bottom: 100px;
     max-width: 264px;
-
 }
 
 /* #endregion */
