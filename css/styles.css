@@ -264,7 +264,7 @@ button {
     width: calc((100% - 72px) / 4)
 }
 
-.info-container {
+.info {
     padding: 120px 0px;
 }
 
@@ -303,9 +303,13 @@ button {
 /* #endregion */
 
 /* #region team */
+
+.team {
+    padding: 120px 0;
+}
+
 .team-container {
     background-color: var(--color-light);
-    padding: 120px 0;
 }
 
 
@@ -344,13 +348,12 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    flex-basis: calc((100% - 72px) / 4);
-    
 }
 
 .team-card-set-item {
     background-color: var(--color-white-background);
     border-radius: 0px 0px 4px 4px; 
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-card-set-item:last-child {
