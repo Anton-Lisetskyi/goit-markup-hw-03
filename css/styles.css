@@ -203,12 +203,8 @@ button {
 /* #region hero */
 .hero {
     background-color: var(--color-primary-dark);
-}
-
-.hero-container {
     padding: 188px 0;
 }
-
 
 /* .hero-container {
     min-height: 600px;
@@ -256,6 +252,9 @@ button {
 
 /* #region info */
 
+.info {
+    padding: 120px 0;
+}
 
 .info-list {
     display: flex;
@@ -331,14 +330,14 @@ button {
 .team-card-set {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 15px;
     gap: 24px;
+    flex-basis: calc((100% - 72px) / 4);
+    
 }
 
 .team-card-set-item {
-    width: calc((100% - 72px) / 4);
     background-color: var(--color-white-background);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px; 
 }
 
 .team-card-set-item:last-child {
@@ -353,12 +352,13 @@ button {
 /* #endregion */
 
 /* #region portfolio */
+
+
 .portfolio-container {
     padding-top: 120px;
     padding-bottom: 120px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    border: 1px solid #e7e9fc;
 }
 
 .portfolio-text-primary {
@@ -375,13 +375,12 @@ button {
 .portfolio-card-set {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 15px;
     row-gap: 48px;
     column-gap: 24px;
 }
 
 .portfolio-card-set-item {
-    width: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-card-set-item:nth-child(3n) {
@@ -425,8 +424,8 @@ button {
     
 }
 
-.portfolio-img {
-display: inline-block;
+.footer-logo {
+    display: inline-block;
 }
 
 .footer-logo {
@@ -438,12 +437,13 @@ display: inline-block;
     text-transform: uppercase;
     color: var(--color-primary-brand);
     padding: 101px 0 18px;
-    
+    display: inline-block;
     margin-bottom: 16px;
 }
 
 .footer-logo-light {
     color: var(--color-light);
+    display: inline-block;
 
 }
 
@@ -457,242 +457,6 @@ display: inline-block;
     padding-bottom: 100px;
     max-width: 264px;
 
-}
-
-/* #endregion */
-/* #region base */
-body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    color: #434455;
-    background-color: var(--color-white-background);
-}
-
-ul,
-ol {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: currentColor;
-}
-
-/* #endregion */
-
-/* #region header*/
-
-
-.header-logo {
-    color: var(--color-primary-brand);
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-}
-
-.header-logo-dark {
-    color: #2e2f42;
-}
-
-
-.header-nav-list {
-    color: var(--color-primary-dark);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.header-nav-item {
-    color: var(--color-primary-dark);
-}
-
-.header-nav-item a:hover {
-    color: var(--color-primary-state);
-}
-
-.header-nav-item a:focus {
-    color: var(--color-primary-state);
-    text-decoration: underline;
-}
-
-.header-address {
-    font-style: normal;
-}
-
-.header-address-list {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.header-address a:hover {
-    color: var(--color-primary-state);
-}
-
-.header-address a:focus {
-    color: var(--color-primary-state);
-}
-
-/* #endregion */
-
-/* #region hero */
-.hero {
-    background-color: var(--color-primary-dark);
-}
-
-.hero-text-primary {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--color-white-background);
-
-}
-
-.hero-btn {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--color-primary-brand);
-    color: var(--color-white-background);
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-
-}
-
-.hero-btn:hover {
-    background-color: var(--color-primary-state);
-}
-
-.hero-btn:focus {
-    background-color: var(--color-primary-state);
-}
-
-/* #endregion */
-
-/* #region info */
-
-.info-text-secondary {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--color-primary-dark);
-}
-
-.info-text-tertiary {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-text-primary);
-}
-
-/* #endregion */
-
-/* #region team */
-.team {
-    background-color: var(--color-light);
-}
-
-.team-list {
-    background-color: var(--color-white-background);
-}
-
-.team-text-primary {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--color-primary-dark);
-}
-
-
-.team-text-secondary {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--color-primary-dark);
-}
-
-.team-text-tertiary {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--color-text-primary);
-}
-
-/* #endregion */
-
-/* #region portfolio */
-.portfolio-text-primary {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--color-primary-dark);
-}
-
-
-.portfolio-text-secondary {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--color-primary-dark);
-}
-
-.portfolio-text-tertiary {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-text-primary);
-}
-
-/* #endregion */
-
-/* #region footer */
-.footer {
-    background-color: var(--color-primary-dark);
-}
-
-.footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-primary-brand);
-}
-
-.footer-logo-light {
-    color: var(--color-light);
-}
-
-.footer-text-primary {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--color-light);
 }
 
 /* #endregion */
