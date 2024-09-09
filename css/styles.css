@@ -431,7 +431,8 @@ button {
 
 /* #region footer */
 
-.footer a {
+.footer-logo,
+.footer-logo-light a {
     display: inline-block;
 }
 
