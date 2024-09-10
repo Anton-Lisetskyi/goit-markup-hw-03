@@ -92,8 +92,6 @@ button {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    width: 1158px;
-    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -101,7 +99,8 @@ button {
     display: flex;
     justify-content: start;
     align-items: center;
-    
+    width: 1158px;
+        padding: 0 15px;
 }
 
 .header-nav {
@@ -296,10 +295,10 @@ button {
 
 .team {
     background-color: var(--color-light);
+        padding: 120px 0;
 }
 
 .team-container {
-    padding: 120px 0;
 }
 
 .team-text-primary {
