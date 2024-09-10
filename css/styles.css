@@ -92,12 +92,16 @@ button {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .header-container {
     display: flex;
     justify-content: start;
     align-items: center;
+    
 }
 
 .header-nav {
@@ -295,7 +299,6 @@ button {
 }
 
 .team-container {
-    
     padding: 120px 0;
 }
 
