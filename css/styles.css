@@ -148,10 +148,6 @@ button {
     padding: 24px 0;
 }
 
-.header-nav {
-    padding-left: 15px;
-}
-
 .header-nav-item {
     color: var(--color-primary-dark);
 }
@@ -178,7 +174,6 @@ button {
     align-items: center;
     justify-content: end;
     gap: 40px;
-    padding-right: 15px;
 }
 
 .address-html {
@@ -306,6 +301,7 @@ button {
 
 .team-container {
     background-color: var(--color-light);
+    padding: 120px 0;
 }
 
 .team-text-primary {
@@ -317,7 +313,6 @@ button {
     text-transform: capitalize;
     color: var(--color-primary-dark);
     margin-bottom: 72px;
-    padding: 120px 0;
 }
 
 .team-text-secondary {
@@ -343,7 +338,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 129px;
+    padding: 0 15px;
 }
 
 .team-card-set-item {
