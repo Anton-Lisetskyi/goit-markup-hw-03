@@ -104,7 +104,6 @@ button {
     display: flex;
     justify-content: start;
     align-items: center;
-
 }
 
 .header-nav {
@@ -132,7 +131,6 @@ button {
 
 }
 
-
 .header-nav-list {
     color: var(--color-primary-dark);
     font-weight: 500;
@@ -157,7 +155,6 @@ button {
 .header-nav-item {
     color: var(--color-primary-dark);
 }
-
 
 .header-nav-item a:hover {
     color: var(--color-primary-state);
@@ -311,8 +308,6 @@ button {
     background-color: var(--color-light);
 }
 
-
-
 .team-text-primary {
     font-weight: 700;
     font-size: 36px;
@@ -437,7 +432,6 @@ button {
 .footer {
     background-color: var(--color-primary-dark);
     padding: 100px 0;
-    display: inline-block;
 }
 
 
@@ -458,6 +452,7 @@ button {
     text-transform: uppercase;
     color: var(--color-primary-brand);
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo-light {
