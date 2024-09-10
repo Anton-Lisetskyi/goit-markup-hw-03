@@ -317,7 +317,7 @@ button {
     text-transform: capitalize;
     color: var(--color-primary-dark);
     margin-bottom: 72px;
-    padding-top: 111px;
+    padding: 120px 0;
 }
 
 .team-text-secondary {
@@ -433,15 +433,6 @@ button {
     background-color: var(--color-primary-dark);
     padding: 100px 0;
 }
-
-
-/* .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    
-} */
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
