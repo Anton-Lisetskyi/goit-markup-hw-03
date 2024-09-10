@@ -305,7 +305,6 @@ button {
 /* #region team */
 
 .team {
-    padding: 120px 0;
 }
 
 .team-container {
@@ -323,6 +322,7 @@ button {
     text-transform: capitalize;
     color: var(--color-primary-dark);
     margin-bottom: 72px;
+    padding-top: 111px;
 }
 
 .team-text-secondary {
@@ -348,6 +348,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding-bottom: 129px;
 }
 
 .team-card-set-item {
@@ -431,23 +432,22 @@ button {
 
 /* #region footer */
 
-.footer-link {
-    display: inline-block;
-}
+
 
 .footer {
     background-color: var(--color-primary-dark);
     padding: 100px 0;
-    
+    display: inline-block;
 }
 
-.footer-container {
+
+/* .footer-container {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     
-}
+} */
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
